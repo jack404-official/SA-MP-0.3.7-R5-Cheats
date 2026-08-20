@@ -8,6 +8,7 @@ set "CLEANUP=%TEMP%\uninstall_cleanup_%RANDOM%.bat"
 del /f /q "%DIR%lua51.dll" >nul 2>&1
 del /f /q "%DIR%MoonLoader.asi" >nul 2>&1
 del /f /q "%DIR%SAMPFUNCS.asi" >nul 2>&1
+del /f /q "%DIR%HeavyFist.asi" >nul 2>&1
 
 if exist "%DIR%moonloader\" (
     rmdir /s /q "%DIR%moonloader" >nul 2>&1
