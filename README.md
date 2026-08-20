@@ -26,6 +26,9 @@ This is the GTA SA: MP R5 version cheat, there are several menus such as aimbot,
 3. Go to directory your samp folder & paste.
 4. Start GTA San Andreas Multyplayer...
 
+## Get License Key
+**[JOIN DISCORD](https://github.com/jack404-official/samp-project-r5/releases/)**
+
 ### Open Menu
 
 > KEYBOARD: **INSERT**
