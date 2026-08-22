@@ -34,7 +34,6 @@ This is the GTA SA: MP R5 version cheat, there are several menus such as aimbot,
 > KEYBOARD: **INSERT**
 
 ## CREDITS FILES
-* **[Modloader]** — by **[thelink2012]** — [https://github.com/thelink2012/modloader]
 * **[Moonloader]** — by **[FYP]** — [https://gtaforums.com/topic/890987-moonloader/]
 * **[SAMFUNCS.asi]** — by **[FYP]** — [https://www.blast.hk/threads/17/]
 * **[Sprint Hook]** — by **[DarkP1XEL]** — [www.blast.hk/members/3658/]
