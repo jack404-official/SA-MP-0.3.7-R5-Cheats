@@ -1,37 +1,109 @@
 @echo off
 setlocal EnableExtensions
 
-set "SELF=%~f0"
 set "DIR=%~dp0"
+set "SELF=%~f0"
 set "CLEANUP=%TEMP%\uninstall_cleanup_%RANDOM%.bat"
 
-del /f /q "%DIR%lua51.dll" >nul 2>&1
-del /f /q "%DIR%MoonLoader.asi" >nul 2>&1
-del /f /q "%DIR%SAMPFUNCS.asi" >nul 2>&1
-del /f /q "%DIR%sp_hook.asi" >nul 2>&1
+echo ========================================
+echo        CLEANUP CLEO / MODLOADER
+echo ========================================
+echo.
+echo Folder target:
+echo %DIR%
+echo.
 
-if exist "%DIR%moonloader\" (
-    rmdir /s /q "%DIR%moonloader" >nul 2>&1
-    rmdir /s /q "%DIR%SAMPFUNCS" >nul 2>&1
-)
+REM ==================================================
+REM Delete main files
+REM ==================================================
 
-for /d %%D in ("%TEMP%\*") do (
-    rmdir /s /q "%%D" >nul 2>&1
-)
+echo [1/3] Deleting files...
 
-for %%F in ("%TEMP%\*") do (
-    del /f /q "%%F" >nul 2>&1
-)
-
-if /I not "%TMP%"=="%TEMP%" (
-    for /d %%D in ("%TMP%\*") do (
-        rmdir /s /q "%%D" >nul 2>&1
+for %%F in (
+    "CLEO.asi"
+    "lua51.dll"
+    "modloader.asi"
+    "MoonLoader.asi"
+    "SAMPFUNCS.asi"
+) do (
+    if exist "%DIR%%%~F" (
+        echo Deleting: %DIR%%%~F
+        del /f /q "%DIR%%%~F"
     )
+)
 
-    for %%F in ("%TMP%\*") do (
-        del /f /q "%%F" >nul 2>&1
+REM ==================================================
+REM Delete Folders
+REM ==================================================
+
+echo.
+echo [2/3] Deleting folders...
+
+for %%D in (
+    "cleo"
+    "modloader"
+    "moonloader"
+    "scripts"
+    "SAMPFUNCS"
+) do (
+    if exist "%DIR%%%~D" (
+        echo Deleting folder: %DIR%%%~D
+        rmdir /s /q "%DIR%%%~D"
     )
 )
+
+REM ==================================================
+REM Check if anything is left behind
+REM ==================================================
+
+echo.
+echo [3/3] Checking results...
+
+set "FAILED=0"
+
+for %%F in (
+    "CLEO.asi"
+    "lua51.dll"
+    "modloader.asi"
+    "MoonLoader.asi"
+    "SAMPFUNCS.asi"
+) do (
+    if exist "%DIR%%%~F" (
+        echo [GAGAL] File masih ada: %DIR%%%~F
+        set "FAILED=1"
+    )
+)
+
+for %%D in (
+    "cleo"
+    "modloader"
+    "moonloader"
+    "scripts"
+) do (
+    if exist "%DIR%%%~D" (
+        echo [GAGAL] Folder masih ada: %DIR%%%~D
+        set "FAILED=1"
+    )
+)
+
+echo.
+
+if "%FAILED%"=="1" (
+    echo ========================================
+    echo Failed deletion.
+    echo ========================================
+    pause
+    exit /b 1
+)
+
+echo ========================================
+echo All files and folders have been successfully deleted.
+echo ========================================
+echo.
+
+REM ==================================================
+REM Delete this batch file after completion
+REM ==================================================
 
 (
     echo @echo off
@@ -42,4 +114,4 @@ if /I not "%TMP%"=="%TEMP%" (
 
 start "" /min "%CLEANUP%"
 
-exit
+exit /b 0
