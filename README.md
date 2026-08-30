@@ -58,7 +58,7 @@ uninstall_cheat.bat
 
 ## Credits
 
-* **[MoonLoader]** — by **[FYP]** — [https://gtaforums.com/topic/890987-moonloader/] / [https://www.blast.hk/threads/13380/]
+* **[MoonLoader]** — by **[FYP]** — [https://gtaforums.com/topic/890987-moonloader/]
 * **[SAMPFUNCS]** — by **[FYP]** — [https://www.blast.hk/threads/17/]
 * **[CLEO Library]** — by **[Seemann / Alien / Deji]** — [https://cleo.li/]
 * **[Mod Loader]** — by **[TheLink2012]** — [https://gtaforums.com/topic/669520-mod-loader/]
