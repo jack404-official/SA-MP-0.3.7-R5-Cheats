@@ -1,42 +1,76 @@
-# SA:MP Project R5 Version
+# SA:MP Project R5 Internal Cheats
 
-This is the GTA SA: MP R5 version cheat, there are several menus such as aimbot, esp, and other cheat menus.
+An advanced internal cheat, ImGui overlay, and utility suite for **GTA San Andreas Multiplayer (SA:MP 0.3.7-R5)** featuring smooth aimbot, ESP visuals, weapon modifications, C-Bug automation, skin changer, player finder, custom music player, and configuration manager.
 
-![Lua](https://img.shields.io/badge/Lua-%232C2D72.svg?style=for-the-badge\&logo=lua\&logoColor=white)
-![GTA San Andreas](https://img.shields.io/badge/GTA-San%20Andreas-orange.svg?style=for-the-badge)
-![MoonLoader](https://img.shields.io/badge/MoonLoader-Lua-green.svg?style=for-the-badge)
+![Lua](https://img.shields.io/badge/Lua-5.1-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
+![SA:MP](https://img.shields.io/badge/Game-SA%3AMP%200.3.7--R5-orange.svg?style=for-the-badge)
+![MoonLoader](https://img.shields.io/badge/Framework-MoonLoader%20v026-green.svg?style=for-the-badge)
+![ImGui](https://img.shields.io/badge/GUI-Dear%20ImGui-blue.svg?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Architecture-x86%20(32--bit)-lightgrey.svg?style=for-the-badge)
+
+---
+
+## Preview & Showcase
+
+[![SA:MP Project Showcase](https://img.shields.io/badge/YouTube-Watch%20Showcase%20Video-red.svg?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com)
+
+> 📺 **YouTube Video Showcase:** [Watch the full showcase and gameplay demonstration](https://www.youtube.com)
+
+---
 
 ## Features
 
-* **Aimbot Local** — local target assistance with configurable targeting behavior
-* **Aimbot Sniper** — dedicated sniper aiming system for long-distance targets
-* **ESP Menu** — visual player information and ESP utilities
-* **C-Bug** — automated C-Bug assistance
-* **Auto RP** — roleplay automation utilities
-* **Cheat General** — collection of general gameplay utilities
-* **Spawn Gun** — weapon spawning and ammunition management
-* **Player Finder** — Displaying all player data
-* **Music Player** — Listening custom music
-* **Uninstaller** — includes `uninstall_cheat.bat` for removing the cheat files
+* **Aimbot System** — Smooth angle aimbot with target bone selection (Head, Neck, Torso, Pelvis, Closest Bone), adjustable FOV circle, distance limits, and dedicated weapon profiles (General, Rifle, Country Rifle, Sniper).
+* **ESP & Visuals** — 2D bounding boxes, snaplines/tracers, player skeleton/bone rendering, name tags, health/armor bars, wall visibility toggle, and full RGB color pickers.
+* **Weapon Modifications** — Weapon recoil spread control (No Recoil), rapid fire multiplier, maximum damage modifier, dynamic crosshair patch, and click warp teleportation.
+* **C-Bug Automation** — Smooth automated C-Bug assistance with customizable secondary keybinds, crosshair overlay, and camera restore freeze prevention.
+* **Skin Changer** — In-game character model changer with instant preview, ID search filter, and model lock persistence.
+* **Spawn Gun** — Built-in weapon spawner with custom ammunition, health/armor refill, search filter, and anti-cheat sync bypass.
+* **Player Finder & Radar** — Real-time player database display showing streamed status, distance, health, armor, ping, score, and world coordinates.
+* **Custom Music Player** — Built-in audio player supporting `.mp3`, `.wav`, `.ogg`, and `.m4a` files with playlist navigation, volume controls, and repeat loop mode.
+* **Auto RP Macros** — Roleplay automated chat command macros bound to configurable hotkeys.
+* **Config Manager** — Automatic INI configuration saving and loading (`samp_project_config.ini`).
+* **Modern ImGui UI** — Clean sidebar layout with customizable dark theme, hotkey toggle, and `/saproject` chat command registration.
 
-## Installation
-1. Download the latest version from the **[Releases](https://github.com/jack404-official/samp-project-r5/releases/)** page.
-2. Download file samp_project.zip
-3. Extract file samp_project.zip and copy or cut all files
-3. Go to directory your samp folder & paste.
-4. Start GTA San Andreas Multyplayer...
+---
 
-## Get License Key
-**[JOIN DISCORD](https://github.com/jack404-official/samp-project-r5/releases/)**
+## Installation & Usage
+
+1. Download the latest release from the **[Releases](https://github.com/jack404-official/samp-project-r5/releases/)** section.
+2. Extract the contents of `samp_project.zip`.
+3. Copy and paste all extracted files and folders (`MoonLoader.asi`, `SAMPFUNCS.asi`, `CLEO.asi`, `SilentPatchSA.asi`, `modloader.asi`, `moonloader/`, `cleo/`, `modloader/`, etc.) directly into your **GTA San Andreas** root directory.
+4. Launch **SA:MP (0.3.7-R5)** and join your desired server.
 
 ### Open Menu
 
-> KEYBOARD: **INSERT**
+> KEYBOARD: **INSERT** (Default) or type `/saproject` in chat.  
+> *(Keybind and chat command can be customized in the Settings menu).*
 
-## CREDITS FILES
-* **[Moonloader]** — by **[FYP]** — [https://gtaforums.com/topic/890987-moonloader/]
-* **[SAMFUNCS.asi]** — by **[FYP]** — [https://www.blast.hk/threads/17/]
-* **[Sprint Hook]** — by **[DarkP1XEL]** — [www.blast.hk/members/3658/]
+---
+
+## Uninstallation
+
+To cleanly remove all cheat files and restore your GTA SA directory, run:
+```cmd
+uninstall_cheat.bat
+```
+
+---
+
+## Credits & Third-Party Libraries
+
+* **[MoonLoader]** — by **[FYP]** — [https://gtaforums.com/topic/890987-moonloader/] / [https://www.blast.hk/threads/13380/]
+* **[SAMPFUNCS]** — by **[FYP]** — [https://www.blast.hk/threads/17/]
+* **[CLEO Library]** — by **[Seemann / Alien / Deji]** — [https://cleo.li/]
+* **[Mod Loader]** — by **[TheLink2012]** — [https://gtaforums.com/topic/669520-mod-loader/]
+* **[SilentPatch]** — by **[CookieS / Silent]** — [https://gtaforums.com/topic/669045-silentpatch/]
+* **[Dear ImGui]** — by **[ocornut]** — [https://github.com/ocornut/imgui]
+* **[Moon ImGui]** — by **[FYP]** — [https://www.blast.hk/threads/19292/]
+* **[SAMP.Lua]** — by **[FYP]** — [https://github.com/THE-FYP/SAMP.Lua]
+* **[Sprint Hook]** — by **[DarkP1XEL]** — [https://www.blast.hk/threads/3658/]
+* **[BASS Audio Library]** — by **[Un4seen Developments]** — [https://www.un4seen.com/]
+
+---
 
 ## License
 

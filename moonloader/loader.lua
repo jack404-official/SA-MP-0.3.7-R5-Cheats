@@ -1,1 +1,0 @@
-require("protect_core")
