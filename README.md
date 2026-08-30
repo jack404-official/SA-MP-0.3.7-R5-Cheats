@@ -56,7 +56,7 @@ uninstall_cheat.bat
 
 ---
 
-## Credits & Third-Party Libraries
+## Credits
 
 * **[MoonLoader]** — by **[FYP]** — [https://gtaforums.com/topic/890987-moonloader/] / [https://www.blast.hk/threads/13380/]
 * **[SAMPFUNCS]** — by **[FYP]** — [https://www.blast.hk/threads/17/]
