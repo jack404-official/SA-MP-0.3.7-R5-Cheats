@@ -12,7 +12,7 @@ An advanced internal cheat, ImGui overlay, and utility suite for **GTA San Andre
 
 ## Preview & Showcase
 
-[![SA:MP Project Showcase](https://img.shields.io/badge/YouTube-Watch%20Showcase%20Video-red.svg?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com)
+[![SA:MP Project Showcase](https://img.shields.io/badge/YouTube-Watch%20Showcase%20Video-red.svg?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=FNKpwVjsKKQ&t=9s)
 
 > 📺 **YouTube Video Showcase:** [Watch the full showcase and gameplay demonstration](https://www.youtube.com/watch?v=FNKpwVjsKKQ&t=9s)
 
