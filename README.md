@@ -36,7 +36,7 @@ An advanced internal cheat, ImGui overlay, and utility suite for **GTA San Andre
 ## Installation & Usage
 
 1. Download the latest release from the **[Releases](https://github.com/jack404-official/samp-project-r5/releases/)** section.
-2. Extract the contents of `samp_project.zip`.
+2. Extract the contents of `samp_project.7z`.
 3. Copy and paste all extracted files and folders (`MoonLoader.asi`, `SAMPFUNCS.asi`, `CLEO.asi`, `SilentPatchSA.asi`, `modloader.asi`, `moonloader/`, `cleo/`, `modloader/`, etc.) directly into your **GTA San Andreas** root directory.
 4. Launch **SA:MP (0.3.7-R5)** and join your desired server.
 
