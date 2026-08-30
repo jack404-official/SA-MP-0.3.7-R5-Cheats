@@ -1,4 +1,4 @@
-# SA:MP Project R5 Internal Cheats
+# SA:MP Project R5 Cheats
 
 An advanced internal cheat, ImGui overlay, and utility suite for **GTA San Andreas Multiplayer (SA:MP 0.3.7-R5)** featuring smooth aimbot, ESP visuals, weapon modifications, C-Bug automation, skin changer, player finder, custom music player, and configuration manager.
 
@@ -6,7 +6,6 @@ An advanced internal cheat, ImGui overlay, and utility suite for **GTA San Andre
 ![SA:MP](https://img.shields.io/badge/Game-SA%3AMP%200.3.7--R5-orange.svg?style=for-the-badge)
 ![MoonLoader](https://img.shields.io/badge/Framework-MoonLoader%20v026-green.svg?style=for-the-badge)
 ![ImGui](https://img.shields.io/badge/GUI-Dear%20ImGui-blue.svg?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/Architecture-x86%20(32--bit)-lightgrey.svg?style=for-the-badge)
 
 ---
 
@@ -50,7 +49,7 @@ An advanced internal cheat, ImGui overlay, and utility suite for **GTA San Andre
 
 ## Uninstallation
 
-To cleanly remove all cheat files and restore your GTA SA directory, run:
+To cleanly remove all cheat files your GTA SA directory, run:
 ```cmd
 uninstall_cheat.bat
 ```
@@ -67,7 +66,6 @@ uninstall_cheat.bat
 * **[Dear ImGui]** — by **[ocornut]** — [https://github.com/ocornut/imgui]
 * **[Moon ImGui]** — by **[FYP]** — [https://www.blast.hk/threads/19292/]
 * **[SAMP.Lua]** — by **[FYP]** — [https://github.com/THE-FYP/SAMP.Lua]
-* **[Sprint Hook]** — by **[DarkP1XEL]** — [https://www.blast.hk/threads/3658/]
 * **[BASS Audio Library]** — by **[Un4seen Developments]** — [https://www.un4seen.com/]
 
 ---
