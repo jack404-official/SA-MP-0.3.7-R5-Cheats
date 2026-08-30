@@ -1,4 +1,4 @@
-# SA:MP Project R5 Cheats
+# SA:MP 0.3.7 R5 Cheats
 
 An advanced internal cheat, ImGui overlay, and utility suite for **GTA San Andreas Multiplayer (SA:MP 0.3.7-R5)** featuring smooth aimbot, ESP visuals, weapon modifications, C-Bug automation, skin changer, player finder, custom music player, and configuration manager.
 
